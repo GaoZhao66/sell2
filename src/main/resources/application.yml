@@ -1,0 +1,13 @@
+spring:
+  datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     username: root
+     password: root
+     url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSl=false
+  jpa:
+     show-sql: true
+  jackson:
+      default-property-inclusion: non_null  #返回是null的话就不显示
+server:
+  servlet:
+    context-path: /sell
